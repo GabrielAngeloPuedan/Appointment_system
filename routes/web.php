@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AppointmentController;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -21,4 +22,5 @@ Route::get('/', function () {
 
 
 Route::get('/appointments/form', [AppointmentController::class, 'showForm'])->name('appointments.form');
+Route::get('/appointments/display', [AppointmentController::class, 'displayAppointments'])->name('appointments.display');
 Route::post('/appointments/book', [AppointmentController::class, 'bookAppointment'])->name('appointments.book');

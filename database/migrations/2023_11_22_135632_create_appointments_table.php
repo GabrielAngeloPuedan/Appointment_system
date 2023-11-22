@@ -16,6 +16,11 @@ return new class extends Migration
             $table->string('service_type');
             $table->date('appointment_date');
             $table->unsignedInteger('queue_number');
+            $table->string('last_name')->default(''); // Add this line
+            $table->string('first_name')->default(''); // Add this line
+            $table->string('address')->default(''); // Add this line
+            $table->string('contact_number')->default(''); // Add this line
+            $table->string('concern')->default(''); // Add this line
             $table->timestamps();
         });
     }

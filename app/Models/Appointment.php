@@ -13,5 +13,10 @@ class Appointment extends Model
         'service_type',
         'appointment_date',
         'queue_number',
+        'last_name',
+        'first_name',
+        'address',
+        'contact_number',
+        'concern',
     ];
 }
